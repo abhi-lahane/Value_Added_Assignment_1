@@ -1,0 +1,403 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background-color: #F3F4FA;
+  color: #1a1a2e;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/*  layout  */
+.layout {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+}
+
+/*  sidebar  */
+.sidebar {
+  width: 230px;
+  min-width: 230px;
+  background-color: #1E1D3B;
+  display: flex;
+  flex-direction: column;
+  padding: 28px 0 20px 0;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.sidebar-logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 0 24px 20px 24px;
+}
+
+.sidebar-logo-icon {
+  width: 44px;
+  height: 44px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.sidebar-logo-text {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 1.2;
+  letter-spacing: -0.2px;
+}
+
+.sidebar-divider {
+  border: none;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  margin: 0 24px 20px 24px;
+}
+
+.sidebar-divider-bottom {
+  margin-top: auto;
+  margin-bottom: 10px;
+}
+
+.sidebar-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 0 14px;
+  flex: 1;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 12px 16px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: #b0b8d4;
+  font-size: 15px;
+  font-weight: 500;
+  transition: background 0.15s;
+}
+
+.nav-item.active {
+  background-color: #5B35CC;
+  color: #ffffff;
+}
+
+.nav-icon {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.logout-item {
+  margin: 0 14px 8px 14px;
+  color: #b0b8d4;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+/*  main area  */
+.main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+/*  topbar*/
+.topbar {
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 32px;
+  height: 70px;
+  border-bottom: 1px solid #e5e7eb;
+  flex-shrink: 0;
+}
+
+.topbar-title {
+  font-size: 26px;
+  font-weight: 800;
+  color: #1a1a2e;
+}
+
+.topbar-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.topbar-bell {
+  width: 34px;
+  height: 34px;
+  object-fit: contain;
+}
+
+.topbar-avatar {
+  width: 38px;
+  height: 38px;
+  object-fit: contain;
+  border-radius: 50%;
+}
+
+.topbar-username {
+  font-size: 15px;
+  font-weight: 600;
+  color: #1a1a2e;
+}
+
+.topbar-chevron {
+  font-size: 11px;
+  color: #6b7280;
+}
+
+/*  content  */
+.content {
+  flex: 1;
+  overflow-y: auto;
+  padding: 24px 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+/*  wlc banner  */
+.welcome-banner {
+  background-color: #E9EAFF;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 32px 36px 0 36px;
+  overflow: hidden;
+  min-height: 170px;
+}
+
+.welcome-text {
+  flex: 1;
+}
+
+.welcome-heading {
+  font-size: 24px;
+  font-weight: 800;
+  color: #1a1a2e;
+  margin-bottom: 10px;
+}
+
+.welcome-sub {
+  font-size: 14px;
+  color: #5a6075;
+  line-height: 1.6;
+}
+
+.welcome-illustration {
+  width: 300px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+.welcome-illustration img {
+  width: 100%;
+  max-width: 300px;
+  display: block;
+  object-fit: contain;
+}
+
+/*  statcardS  */
+.stats-row {
+  display: flex;
+  gap: 18px;
+}
+
+.stat-card {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 20px 22px;
+  border-radius: 14px;
+}
+
+.stat-purple { background-color: #ECEAFF; }
+.stat-green  { background-color: #E6F9F0; }
+.stat-yellow { background-color: #FFF6E0; }
+.stat-red    { background-color: #FFF0F3; }
+
+.stat-icon {
+  width: 56px;
+  height: 56px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.stat-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.stat-number {
+  font-size: 26px;
+  font-weight: 800;
+  color: #1a1a2e;
+  line-height: 1.1;
+}
+
+.stat-label {
+  font-size: 13px;
+  color: #6b7280;
+  margin-top: 2px;
+}
+
+/*  bottom row */
+.bottom-row {
+  display: flex;
+  gap: 20px;
+  flex: 1;
+}
+
+.panel {
+  background-color: #ffffff;
+  border-radius: 16px;
+  padding: 24px 24px;
+  box-shadow: 0 1px 8px rgba(0,0,0,0.05);
+}
+
+.courses-panel {
+  flex: 1.1;
+}
+
+.assignments-panel {
+  flex: 1;
+}
+
+.panel-title {
+  font-size: 17px;
+  font-weight: 800;
+  color: #1a1a2e;
+  margin-bottom: 20px;
+}
+
+/*  courses  */
+.course-item {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 20px;
+}
+
+.course-item:last-child {
+  margin-bottom: 0;
+}
+
+.course-icon {
+  width: 44px;
+  height: 44px;
+  object-fit: contain;
+  flex-shrink: 0;
+  border-radius: 10px;
+}
+
+.course-info {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.course-name {
+  font-size: 14px;
+  font-weight: 700;
+  color: #1a1a2e;
+}
+
+.course-sub {
+  font-size: 12px;
+  color: #9ca3af;
+  margin-top: 2px;
+}
+
+.course-progress {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 6px;
+  min-width: 100px;
+}
+
+.course-pct {
+  font-size: 13px;
+  font-weight: 700;
+  color: #1a1a2e;
+}
+
+.progress-bar-track {
+  width: 100px;
+  height: 7px;
+  background-color: #E5E7EB;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.progress-bar-fill {
+  height: 100%;
+  background-color: #5B35CC;
+  border-radius: 6px;
+}
+
+/*  assi  */
+.assignment-item {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 20px;
+}
+
+.assignment-item:last-child {
+  margin-bottom: 0;
+}
+
+.assignment-icon {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.assignment-info {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.assignment-name {
+  font-size: 14px;
+  font-weight: 700;
+  color: #1a1a2e;
+}
+
+.assignment-due {
+  font-size: 12px;
+  color: #9ca3af;
+  margin-top: 3px;
+}
+
+.badge-pending {
+  background-color: #FFE4E9;
+  color: #E0244A;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 5px 14px;
+  border-radius: 20px;
+  white-space: nowrap;
+  flex-shrink: 0;
+}

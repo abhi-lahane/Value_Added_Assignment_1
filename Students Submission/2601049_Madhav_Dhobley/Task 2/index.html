@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Student Portal</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="layout">
+
+
+    <div class="sidebar">
+      <div class="sidebar-logo">
+        <img src="Assets/17.png" alt="logo" class="sidebar-logo-icon" />
+        <span class="sidebar-logo-text">Student<br>Portal</span>
+      </div>
+
+      <hr class="sidebar-divider" />
+
+      <nav class="sidebar-nav">
+        <a href="#" class="nav-item active">
+          <img src="Assets/13.png" alt="Dashboard" class="nav-icon" />
+          <span>Dashboard</span>
+        </a>
+        <a href="#" class="nav-item">
+          <img src="Assets/12.png" alt="Assignments" class="nav-icon" />
+          <span>Assignments</span>
+        </a>
+        <a href="#" class="nav-item">
+          <img src="Assets/11.png" alt="Courses" class="nav-icon" />
+          <span>Courses</span>
+        </a>
+        <a href="#" class="nav-item">
+          <img src="Assets/10.png" alt="Progress" class="nav-icon" />
+          <span>Progress</span>
+        </a>
+        <a href="#" class="nav-item">
+          <img src="Assets/09.png" alt="Profile" class="nav-icon" />
+          <span>Profile</span>
+        </a>
+      </nav>
+
+      <hr class="sidebar-divider sidebar-divider-bottom" />
+
+      <a href="#" class="nav-item logout-item">
+        <img src="Assets/08.png" alt="Logout" class="nav-icon" />
+        <span>Logout</span>
+      </a>
+    </div>
+
+    <div class="main">
+
+      <header class="topbar">
+        <h1 class="topbar-title">Dashboard</h1>
+        <div class="topbar-right">
+          <img src="Assets/16.png" alt="Notifications" class="topbar-bell" />
+          <img src="Assets/15.png" alt="User" class="topbar-avatar" />
+          <span class="topbar-username">Madhav</span>
+          <span class="topbar-chevron">&#9660;</span>
+        </div>
+      </header>
+
+      <div class="content">
+
+        <div class="welcome-banner">
+          <div class="welcome-text">
+            <h2 class="welcome-heading">Welcome Back, Madhav! &#128075;</h2>
+            <p class="welcome-sub">Continue your learning journey and complete your<br>pending assignments.</p>
+          </div>
+          <div class="welcome-illustration">
+            <img src="Assets/18.png" alt="Illustration" />
+          </div>
+        </div>
+
+        <div class="stats-row">
+          <div class="stat-card stat-purple">
+            <img src="Assets/04.png" alt="Courses" class="stat-icon" />
+            <div class="stat-info">
+              <span class="stat-number">3</span>
+              <span class="stat-label">Courses</span>
+            </div>
+          </div>
+          <div class="stat-card stat-green">
+            <img src="Assets/03.png" alt="Assignments" class="stat-icon" />
+            <div class="stat-info">
+              <span class="stat-number">12</span>
+              <span class="stat-label">Assignments</span>
+            </div>
+          </div>
+          <div class="stat-card stat-yellow">
+            <img src="Assets/02.png" alt="Progress" class="stat-icon" />
+            <div class="stat-info">
+              <span class="stat-number">78%</span>
+              <span class="stat-label">Progress</span>
+            </div>
+          </div>
+          <div class="stat-card stat-red">
+            <img src="Assets/01.png" alt="Due" class="stat-icon" />
+            <div class="stat-info">
+              <span class="stat-number">5</span>
+              <span class="stat-label">Due This Week</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="bottom-row">
+
+          <div class="panel courses-panel">
+            <h3 class="panel-title">Your Courses</h3>
+            <div class="course-item">
+              <img src="Assets/07.png" alt="Web Dev" class="course-icon" />
+              <div class="course-info">
+                <span class="course-name">Web Development</span>
+                <span class="course-sub">HTML, CSS, JavaScript</span>
+              </div>
+              <div class="course-progress">
+                <span class="course-pct">80%</span>
+                <div class="progress-bar-track">
+                  <div class="progress-bar-fill" style="width: 80%"></div>
+                </div>
+              </div>
+            </div>
+            <div class="course-item">
+              <img src="Assets/06.png" alt="Python" class="course-icon" />
+              <div class="course-info">
+                <span class="course-name">Python Programming</span>
+                <span class="course-sub">Basics to Advanced</span>
+              </div>
+              <div class="course-progress">
+                <span class="course-pct">70%</span>
+                <div class="progress-bar-track">
+                  <div class="progress-bar-fill" style="width: 70%"></div>
+                </div>
+              </div>
+            </div>
+            <div class="course-item">
+              <img src="Assets/05.png" alt="Database" class="course-icon" />
+              <div class="course-info">
+                <span class="course-name">Database Systems</span>
+                <span class="course-sub">SQL, Normalization, Queries</span>
+              </div>
+              <div class="course-progress">
+                <span class="course-pct">85%</span>
+                <div class="progress-bar-track">
+                  <div class="progress-bar-fill" style="width: 85%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="panel assignments-panel">
+            <h3 class="panel-title">Upcoming Assignments</h3>
+            <div class="assignment-item">
+              <img src="Assets/14.png" alt="Assignment" class="assignment-icon" />
+              <div class="assignment-info">
+                <span class="assignment-name">Create a Responsive Landing Page</span>
+                <span class="assignment-due">Due: 20 Nov 2026</span>
+              </div>
+              <span class="badge-pending">Pending</span>
+            </div>
+            <div class="assignment-item">
+              <img src="Assets/14.png" alt="Assignment" class="assignment-icon" />
+              <div class="assignment-info">
+                <span class="assignment-name">Array Problem Set</span>
+                <span class="assignment-due">Due: 22 Nov 2026</span>
+              </div>
+              <span class="badge-pending">Pending</span>
+            </div>
+            <div class="assignment-item">
+              <img src="Assets/14.png" alt="Assignment" class="assignment-icon" />
+              <div class="assignment-info">
+                <span class="assignment-name">DBMS SQL Queries</span>
+                <span class="assignment-due">Due: 25 Nov 2026</span>
+              </div>
+              <span class="badge-pending">Pending</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
