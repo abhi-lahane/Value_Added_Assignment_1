@@ -160,3 +160,36 @@ header nav {
     height: auto;
     object-fit: contain;
 }
+
+
+.features {
+    display: flex;
+    justify-content: space-around;
+    gap: 25px;
+    padding: 50px;
+    background-color: #f8f5ff;
+}
+
+.feature-card {
+    width: 30%;
+    padding: 30px;
+    text-align: center;
+    background-color: white;
+    border-radius: 15px;
+}
+
+.feature-card img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+.feature-card h2 {
+    color: #5725c9;
+    margin-bottom: 10px;
+}
+
+.feature-card p {
+    color: #555;
+}
