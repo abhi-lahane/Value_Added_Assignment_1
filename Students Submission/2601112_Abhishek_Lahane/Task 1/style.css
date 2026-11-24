@@ -1,0 +1,72 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+/* Navbar */
+header {
+    height: 5rem;
+    padding: 1rem 5rem;
+    border-bottom: 1px solid rgb(221, 220, 220);
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Logo */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.logo img {
+    width: 55px;
+    height: 55px;
+    object-fit: contain;
+}
+
+.logo h2 {
+    font-size: 28px;
+    color: #171735;
+}
+
+/* Navigation Links */
+.nav-bar {
+    display: flex;
+    gap: 40px;
+}
+
+.nav-bar a {
+    text-decoration: none;
+    color: #45455c;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.nav-bar a:hover {
+    color: #5925ce;
+}
+
+/* Get Started Button */
+.get-started-btn button {
+    background-color: #5925ce;
+    color: white;
+    padding: 14px 25px;
+    border: none;
+    border-radius: 12px;
+    font-size: 17px;
+    cursor: pointer;
+}
