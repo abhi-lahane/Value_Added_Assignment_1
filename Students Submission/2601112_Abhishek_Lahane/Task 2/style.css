@@ -81,3 +81,122 @@ body {
     margin: 25px 17px;
     padding-top: 20px;
 }
+
+/* Top Header */
+
+.main {
+    flex: 1;
+    min-width: 0;
+}
+
+.topbar {
+    height: 95px;
+    background: #ffffff;
+    border-bottom: 1px solid #e5e5f2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 32px;
+}
+
+.topbar h1 {
+    font-size: 37px;
+}
+
+.user-section {
+    display: flex;
+    align-items: center;
+    gap: 17px;
+}
+
+.notification {
+    width: 45px;
+    height: 45px;
+    position: relative;
+    margin-right: 30px;
+}
+
+.notification img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.notification-dot {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background: #f04461;
+    border-radius: 50%;
+    top: 0;
+    right: 0;
+}
+
+.user-image {
+    width: 53px;
+    height: 53px;
+    object-fit: contain;
+    border-radius: 50%;
+}
+
+.user-section h3 {
+    font-size: 20px;
+}
+
+.arrow {
+    width: 10px;
+    height: 10px;
+    border-right: 2px solid #555;
+    border-bottom: 2px solid #555;
+    transform: rotate(45deg);
+    margin-left: 5px;
+    margin-top: -5px;
+}
+
+/* Main Content */
+
+.content {
+    padding: 32px;
+}
+
+/* Welcome Banner */
+
+.welcome {
+    min-height: 258px;
+    border-radius: 17px;
+    background: linear-gradient(110deg, #ece8ff, #f1efff);
+    padding: 35px 42px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+}
+
+.welcome-text {
+    flex: 1;
+}
+
+.welcome-text h1 {
+    font-size: 40px;
+    margin-bottom: 12px;
+}
+
+.welcome-text p {
+    color: #555b7b;
+    font-size: 24px;
+    line-height: 1.6;
+}
+
+.welcome-image {
+    width: 42%;
+    height: 225px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.welcome-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
